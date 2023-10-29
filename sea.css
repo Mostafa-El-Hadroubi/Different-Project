@@ -1,0 +1,159 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.background{
+  width: 100%; 
+ 
+ 
+}
+button {
+  position: fixed;
+  top: 40px;
+  /* right: 30px; */
+  /* width: 70px; */
+  color: #ffffff;
+  background: transparent;
+  font-size: 20px;
+  /* border-radius: 5px; */
+  border: 1px solid #ffffff;
+  /* padding: 5px 8px; */
+  animation: move 5s infinite;
+}
+@keyframes move{
+  0%{
+    border-radius: 5px;
+    padding: 5px 20px;
+  }
+  50%{
+    border-radius: 20px;
+    padding: 3px 5px;
+  }
+  100%{
+    border-radius: 5px;
+    padding: 5px 20px;
+  }
+}
+.btn1{
+  left: 30px;
+}
+ .btn2{
+  /* position: fixed; */
+  right: 30px;
+}
+h1{
+  position: fixed;
+  top: 50%;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  color: #ffffff;
+  width: 100%;
+  /* border: 5px solid; */
+  text-align: center;
+  font-size: 50px;
+  animation: title 3s infinite;
+
+}
+@keyframes title{
+  0%{transform: translate(0, 0);}
+  50%{transform: translate(0, 20px);}
+  100%{transform: translate(0, 0px);}
+}
+.bubbles{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: -30px;
+  width: 100%;
+  
+}
+.img{
+ 
+  margin: 10px;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: bubble 10s infinite;
+}
+@keyframes bubble{
+  0%{transform: translate(0, 0);}
+  
+  100%{transform: translate(0, -1000px);
+  opacity: 0;
+  }
+}
+.img1{
+  animation: bubble 2s infinite;
+  width: 50px;
+  height: 50px;
+}
+.img2{
+  animation: bubble 3.5s infinite;
+  width: 20px;
+  height: 20px;
+}
+.img3{
+  animation: bubble 7.1s infinite;
+  width: 25px;
+  height: 25px;
+}
+.img4{
+  animation: bubble 4.3s infinite;
+  width: 15px;
+  height: 15px;
+}
+.img5{
+  animation: bubble 6.5s infinite;
+  width: 35px;
+  height: 35px;
+}
+.img6{
+  animation: bubble 8..2s infinite;
+  width: 30px;
+}
+.img7{
+  animation: bubble 5.8s infinite;
+  width: 20px;
+  height: 20px;
+}
+.img8{
+  animation: bubble 9.6s infinite;
+  width: 28px;
+  height: 28px;
+}
+.img9{
+  animation: bubble 3.8s infinite;
+  width: 37px;
+  height: 37px;
+}
+.img10{
+  animation: bubble 6.5s infinite;
+  width: 60px;
+  height: 60px;
+}
+.img11{
+  animation: bubble 3.5s infinite;
+  width: 22px;
+  height: 22px;
+}
+.img12{
+  animation: bubble 4.2s infinite;
+  width: 34px;
+  height: 34px;
+}
+.img13{
+  animation: bubble 1.5s infinite;
+  width: 50px;
+  height: 50px;
+}
+.img14{
+  animation: bubble 6.9s infinite;
+  width: 60px;
+  height: 60px;
+}
+.img15{
+  animation: bubble 7.5s infinite;
+  width: 28px;
+  height: 28px;
+}
