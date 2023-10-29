@@ -1,0 +1,106 @@
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(98, 1, 98);
+}
+.logo-nav{
+  background: rgba(28, 0, 28, 0.443);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+.logo a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 40px;
+  text-decoration: none;
+  /* background: green; */
+}
+.logo i{
+  font-size: 30px;
+  margin-right: 5px;
+}
+.nav{
+  /* background: red; */
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 40px;
+  font-size: 30px;
+}
+.nav img{
+  width: 35px;
+  height: 35px;
+}
+.content{
+  /* background: red; */
+  margin-top: 80px;
+}
+.content{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  
+  
+}
+.info{
+  line-height: 30px;
+  
+}
+.info p{
+  font-size: 18px;
+}
+.info h2{
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.inp-btn{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 10px;
+}
+.info input{
+  padding-left: 5px;
+  /* background: green; */
+  font-size: 20px;
+  border: 1px solid gray;
+}
+input::placeholder{
+  font-size: 16px;
+  /* margin-left: 15px; */
+}
+.info button{
+  background: white;
+  color: blueviolet;
+  padding:4px;
+  /* width: 250px; */
+  font-size: 16px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.bottom{
+  background: rgb(28, 0, 28);
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+  height: 80px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.bottom1{
+  display: flex;
+  gap: 10px;
+}
