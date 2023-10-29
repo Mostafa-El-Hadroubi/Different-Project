@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, gray, white);
+}
+.container{
+  background: white;
+  width: 250px;
+  height: 309px;
+  border-radius: 20px ;
+}
+.top{
+  background: blue;
+  height: 90px;
+  position: relative;
+  border-radius: 20px 20px 0px 0px;
+}
+.top img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+
+  left: 50%;
+  border: 2px solid gray;
+  translate: -50%;
+}
+.info{
+  background: white;
+  text-align: center;
+  margin-top: 15px;
+}
+.info p{
+  color: gray;
+  font-size: 18px;
+}
+.icons{
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+.btns{
+  
+  display: flex;
+  justify-content: space-evenly;
+ }
+ .sub, .mes{
+  background: rgba(22, 22, 185, 0.824);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+ }
+
+.sub:hover, .mes:hover{
+  box-shadow: 2px 2px 5px rgba(69, 69, 227, 0.765);
+  cursor: pointer;
+  padding: 7px 11px;
+  transition: 0.5s;
+} 
+
+.icons-vues{
+  background: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+.icon-vue{
+  display: flex;
+  padding: 6px;
+}
+.icon-vue i, p{
+  color: gray;
+}
+.icon-vue i{
+  margin-right: 5px;
+}
