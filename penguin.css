@@ -1,0 +1,502 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  /* width: 100%; */
+  height: 100vh;
+  font-size: 80px;
+  background-image: repeating-conic-gradient(rgb(160, 156, 156)
+   0deg 90deg, rgb(225, 221, 221) 90deg 180deg );
+   background-size: 1em 1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.container{
+  position: relative;
+  
+}
+
+
+.face{
+  position: relative;
+  
+  background: black;
+  border-radius: 60%;
+  padding-top: 2px;
+  padding-left: 40px;
+  animation: face 10s  infinite ;
+}
+@keyframes face {
+  0%{
+    width: 3em;
+    height: 3.5em;
+  }
+  50%{
+    width: 3.3em;
+    height: 3.8em;
+  }
+  100%{
+    width: 3em;
+    height: 3.5em;
+  }
+}
+.forehead{
+  position: absolute;
+  top: 3%;
+  /* width: 2em; */
+  /* height: 1.5em; */
+  background: rgba(255, 252, 252, 0.361);
+  /* margin-top: 5px; */
+  animation: forehead 10s  infinite ;
+}
+@keyframes forehead {
+  0%{
+    width: 2em;
+  height: 1.5em;
+  border-top-right-radius: 80px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  }
+  50%{
+    width: 2.4em;
+  height: 1.7em;
+  border-top-right-radius: 120px;
+  border-top-left-radius: 120px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  }
+  100%{
+    width: 2em;
+  height: 1.5em;
+  border-top-right-radius: 80px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  }
+}
+.left-eye{
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-60%);
+  background: rgb(255, 255, 255, 0.65);
+ border-radius: 60%;
+ animation: left-eye 10s  infinite ;
+}
+@keyframes left-eye {
+  0%{
+    width: 1em;
+    height: 1.2em;
+  }
+  50%{
+    width: 1.2em;
+    height: 1.4em;
+  }
+  100%{
+    width: 1em;
+    height: 1.2em;
+  }
+}
+.right-eye{
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-60%);
+  background: rgb(255, 255, 255, 0.65);
+  border-radius: 60%;
+  animation: right-eye 10s  infinite ;
+}
+@keyframes right-eye {
+  0%{
+    width: 1em;
+    height: 1.2em;
+  }
+  50%{
+    width: 1.2em;
+    height: 1.4em;
+  }
+  100%{
+    width: 1em;
+    height: 1.2em;
+  }
+}
+.gray-eye-left{
+  position: absolute;
+ background: rgb(255, 255, 255, 0.8);
+ border-radius: 50%;
+ top: 10px;
+ left: 10px;
+ animation: gray-eye-left 10s infinite;
+}
+@keyframes gray-eye-left {
+  0%{ 
+    width: 0.55em;
+    height: 0.55em;
+  }
+  50%{
+    width: 0.6em;
+    height: 0.6em;
+  }
+  100%{
+    width: 0.55em;
+    height: 0.55em;
+  }
+}
+.gray-eye-right{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgb(255, 255, 255, 0.8);;
+  border-radius: 50%;
+  animation: gray-eye-right 10s infinite;
+ }
+ @keyframes gray-eye-right {
+  0%{ 
+    width: 0.55em;
+    height: 0.55em;
+  }
+  50%{
+    width: 0.6em;
+    height: 0.6em;
+  }
+  100%{
+    width: 0.55em;
+    height: 0.55em;
+  }
+}
+ .pupil-left{
+  position: absolute;
+  background: black;
+  top: 40px;
+  left: 20px;
+ border-radius: 60%;
+ animation: pupil-left 10s infinite;
+ }
+ @keyframes pupil-left {
+  0%{
+    width: 0.55em;
+    height: 0.65em;
+  }
+  50%{
+    width: 0.58em;
+    height: 0.68em;
+  }
+  100%{
+    width: 0.55em;
+    height: 0.65em;
+  }
+ }
+ .pupil-right{
+  position: absolute;
+  background: black;
+  top: 40px;
+  right: 20px;
+  border-radius: 60%;
+  animation: pupil-right 10s infinite;
+ }
+ @keyframes pupil-right {
+  0%{
+    width: 0.55em;
+    height: 0.65em;
+  }
+  50%{
+    width: 0.58em;
+    height: 0.68em;
+  }
+  100%{
+    width: 0.55em;
+    height: 0.65em;
+  }
+ }
+ .pupil-heart-left{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  border-radius: 50%;
+  background: white;
+  animation: pupil-heart-left 10s infinite;
+ }
+ @keyframes pupil-heart-left {
+  0%{
+    width: 0.25em;
+    height: 0.25em;
+  }
+  50%{
+    width: 0.28em;
+    height: 0.28em;
+  }
+  100%{
+    width: 0.25em;
+    height: 0.25em;
+  }
+ }
+ .pupil-heart-right{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border-radius: 50%;
+  background: white;
+  animation: pupil-heart-right 10s infinite;
+ }
+ @keyframes pupil-heart-right {
+  0%{
+    width: 0.25em;
+    height: 0.25em;
+  }
+  50%{
+    width: 0.28em;
+    height: 0.28em;
+  }
+  100%{
+    width: 0.25em;
+    height: 0.25em;
+  }
+ }
+ .nose{
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(255, 196, 0, 0.993);
+  border-radius: 60%;
+  animation: nose 10s infinite;
+ }
+ @keyframes nose {
+  0%{
+    width: 3.5em;
+    height: 1.2em;
+  }
+  50%{
+    width: 3.8em;
+    height: 1.4em;
+  }
+  100%{
+    width: 3.5em;
+    height: 1.2em;
+  }
+ }
+ .nose-color{
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%);
+  
+  background: linear-gradient(rgb(206, 203, 203),
+   rgb(255, 255, 255));
+  border-radius: 60%;
+  animation: nose-color 10s infinite;
+ }
+ @keyframes nose-color {
+  0%{
+    width: 2.8em;
+    height: 0.9em;
+  }
+  50%{
+    width: 3.1em;
+    height: 1.2em;
+  }
+  100%{
+    width: 2.8em;
+    height: 0.9em;
+  }
+ }
+ .body{
+  position: absolute;
+  top: 65%;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  background: black;
+  animation: body 10s infinite;
+ }
+ @keyframes body {
+  0%{
+    width: 3.5em;
+    height: 3.5em;
+  }
+  50%{
+    width: 3.8em;
+    height: 3.8em;
+  }
+  100%{
+    width: 3.5em;
+    height: 3.5em;
+  }
+ }
+ .neck{
+  position: absolute;
+  top: 8%;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  background: rgba(255, 196, 0, 0.993);
+  animation: neck 10s infinite;
+ }
+ @keyframes neck {
+  0%{
+    width: 1.8em;
+    height: 1em;
+  }
+  50%{
+    width: 2.1em;
+    height: 1.3em;
+  }
+  100%{
+    width: 1.8em;
+    height: 1em;
+  }
+ }
+ .chest{
+  position: absolute;
+  top: 10%;
+  z-index: -2;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  background: rgb(238, 235, 235);
+  animation: chest 10s infinite;
+ }
+ @keyframes chest {
+  0%{
+    width: 2.6em;
+    height: 1.3em;
+  }
+  50%{
+    width: 2.8em;
+    height: 1.5em;
+  }
+  100%{
+    width: 2.6em;
+    height: 1.3em;
+  }
+ }
+ .abdom{
+  position: absolute;
+  top: 6%;
+  z-index: -3;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  background: gainsboro;
+  animation: abdom 10s infinite;
+ }
+ @keyframes abdom {
+  0%{
+    width: 3em;
+    height: 3em;
+  }
+  50%{
+    width: 3.3em;
+    height: 3.3em;
+  }
+  100%{
+    width: 3em;
+    height: 3em;
+  }
+ }
+ .left-hand{
+  position: absolute;
+  top: 20%;
+  z-index: 1;
+  left: -23%;
+  transform: translate(-50%);
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  background: linear-gradient(to bottom left,
+   rgb(247, 245, 245), black );
+  animation: left-hand 1s  infinite;
+ }
+@keyframes left-hand {
+  0%{
+    transform: skewY(-60deg) skewX(40deg);
+  }
+  50%{
+    transform: skewY(-65deg) skewX(30deg);
+  }
+  100%{
+    transform: skewY(-60deg) skewX(40deg);
+  }
+
+}
+ .right-hand{
+  position: absolute;
+  top: 20%;
+  z-index: 1;
+  right: -23%;
+  transform: translate(50%);
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  background: linear-gradient(to top left,
+  black, rgb(247, 245, 245));
+  /* transform: skewY(60deg) skewX(-40deg); */
+  animation: right-hand 1s  infinite;
+ }
+ @keyframes right-hand {
+  0%{
+    transform: skewY(60deg) skewX(-40deg);
+  }
+  50%{
+    transform: skewY(65deg) skewX(-30deg);
+  }
+  100%{
+    transform: skewY(60deg) skewX(-40deg);
+  }
+}
+ .left-foot{
+  position: absolute;
+  bottom: -20%;
+  left: 10%;
+  background: linear-gradient(to right bottom, orange, yellow);
+  border-radius: 20px;
+  transform: perspective(300px) rotateX(-45deg) 
+  skew(30deg);
+  animation: left-foot 10s infinite;
+ }
+@keyframes left-foot {
+  0%{
+    width: 0.8em;
+    height: 1.8em;
+  }
+  50%{
+    width: 1.2em;
+    height: 2em;
+  }
+  100%{
+    width: 0.8em;
+    height: 1.8em;
+  }
+}
+ .right-foot{
+  position: absolute;
+  bottom: -20%;
+  right: 10%;
+  background: linear-gradient(to right bottom, orange, yellow);
+  border-radius: 20px;
+  transform: perspective(300px) rotateX(-45deg) 
+  skew(-30deg);
+  animation: right-foot 10s infinite;
+ }
+ @keyframes right-foot {
+  0%{
+    width: 0.8em;
+    height: 1.8em;
+  }
+  50%{
+    width: 1.2em;
+    height: 2em;
+  }
+  100%{
+    width: 0.8em;
+    height: 1.8em;
+  }
+}
